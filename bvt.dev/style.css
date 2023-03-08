@@ -1,28 +1,39 @@
- /* box */
-.container{
+/*background image*/
+body{
+    background-image: url("https://images.pexels.com/photos/772429/pexels-photo-772429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: 200vh 100vh;
+    min-width: 500px;
+    min-height: 500px;
+}
+ /* parent function */
+ .container{
     display: flex;
+    align-self:center;
     border-radius: 10%;
     box-shadow: 0.5px 0.5px 2px 2px rgb(217, 209, 209);
     background-color: white;
+    opacity: 75%;
     width: 400px;
-    height: 320px;
+    height: 400px;
     margin:auto;
     justify-content: center;
-    font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial;
-    min-width: 400px;
+    font-family:Copperplate ;
+    margin-top: 30vh;
 }
 
-.form{
+/* all child elements-- content within white box */
+.content{
     display:flex;
     flex-direction: column;
     align-items:center;
     justify-content: space-around;
     margin-bottom: 40px;
-    margin-top: 20px;
-    
+    margin-top:30px;
 }
-
+/* username and password boxes */
 .box {
+    color: rgb(4, 4, 4);
     display:flex; 
     border-top:none;
     border-left: none;
@@ -34,17 +45,25 @@
 
 }
 
+/* sign in button */
 .submit{
     display:flex;
     border-radius: 20px;
-    background-color: rgb(53,149,246);
+    background-color: rgb(193, 114, 10);
     color:white;
     width:200px;
     height:40px;
     justify-content:center;
-    box-shadow: 2px 2px  rgb(166, 173, 173);    
+    box-shadow: 2px 2px  rgb(66, 52, 58); 
+    font-family: Copperplate;  
+    font-size: 18px; 
 }
 
+/* highlight function */
 .submit:hover{
-    background-color: rgb(5, 145, 145);
+    background-color: rgb(234, 168, 36);
+}
+.box:hover{
+    background-color: rgb(206, 149, 79);
+    border-radius: 20px;
 }
